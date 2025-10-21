@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт</title>
+    <style>
+        .nav-active {
+            background-color: #e79f60;
+            font-weight: bold;
+            color: #000;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px;
+            display: block;
+        }
+        ul li a:hover {
+            background-color: #f4dddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Бани под ключ</h1><p id="Real"></p>
+    <ul>
+        <li><a href="index.html" target="_self" class="nav-active">Главная</a></li>
+        <li><a href="https://perm.bani.ru.com/" target="_blank">Пермские Бани Оригинальный Сайт</a></li>
+        <li><a href="https://perm.bani.ru.com/" target="_blank"><img src="444.png" height="30px"></a></li>
+        <li><a href="catalog.html" target="_blank">Каталог Бань</a></li>
+        <li><a href="index.html" target="_self">Готовые Бани</a></li>
+        <li><a href="form.html" target="_blank">Заказы</a></li>
+    </ul>
+
+    <br><br>
+
+    <h3 align="left">Оформление заказа</h3>
+    <!--<form action="../../cgi-bin/form_action.py" method='get' target='_self'>-->
+    <!--<form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>-->
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank" align="left">
+        <p>Введите данные:<input type="hidden" name="q" value="search"></p>
+        <p>Имя: <input type="Text" name="name" size=20 value="Иван"></p>
+        <p>Фамилия: <input type="Text" name="last_name" size=20 value="Иванов"></p>
+        <p>Мобильный телефон: <input type="Tel" name="phone" size=20 value="8-800-555-35-35"></p>
+        <p>Электронная почта: <input type="Text" name="mail" size=20 value="example@example.com"></p>
+
+        <p>Подписаться на нашу рассылку:
+            <input type="Radio" name="place" value="Forward">Да
+            <input type="Radio" name="place" value="Midfielder" checked>Нет
+        </p>
+
+        <p> Тип Бани:<select name="010_mode">
+                <OPTION value="a">«Скандинавия»</OPTION>
+                <OPTION value="w">«Флагман»</OPTION>
+                <OPTION value="w">«Мажор»</OPTION>
+            </select></p>
+
+        <input type="hidden" name="function" value="page">
+        <input type="hidden" name="page_id" value="3">
+
+        <p>
+            <input type="Reset" name="Reset" value="Обновить">
+            <input type="Submit" name="submit" value="Отправить">
+        </p>
+    </form>
+</body>
+
+</html>
+
